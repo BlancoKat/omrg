@@ -1,0 +1,3 @@
+# Optional 3D preview (CLI --show / --screenshot).
+-r requirements.txt
+pyvista>=0.42

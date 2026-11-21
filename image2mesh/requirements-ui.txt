@@ -1,0 +1,3 @@
+# Optional Gradio interface. Includes the preview extra so the page can render.
+-r requirements-preview.txt
+gradio>=4.0

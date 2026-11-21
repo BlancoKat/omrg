@@ -1,0 +1,9 @@
+# Core install: conversion plus every exporter this project advertises.
+# STL, OBJ, PLY, and GLB/GLTF come from trimesh itself.
+# 3MF is implemented in trimesh and imports lxml and networkx when used.
+numpy>=1.24
+Pillow>=10.0
+scipy>=1.10
+trimesh>=4.0
+lxml>=4.9
+networkx>=3.0

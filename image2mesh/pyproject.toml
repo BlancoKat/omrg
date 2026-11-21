@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "image2mesh"
+version = "1.0.0"
+description = "Convert a 2D image into a 3D height-map mesh"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{name = "BlancoKat"}]
+dependencies = [
+    "numpy>=1.24",
+    "Pillow>=10.0",
+    "scipy>=1.10",
+    "trimesh>=4.0",
+    "lxml>=4.9",
+    "networkx>=3.0",
+]
+
+[project.optional-dependencies]
+preview = ["pyvista>=0.42"]
+ui = ["pyvista>=0.42", "gradio>=4.0"]
+dev = ["pyvista>=0.42", "pytest>=8.0"]
+
+[project.scripts]
+image2mesh = "image2mesh.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["image2mesh*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
