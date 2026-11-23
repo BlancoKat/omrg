@@ -1,0 +1,3 @@
+# Test dependencies. Preview is included so the off-screen screenshot test runs.
+-r requirements-preview.txt
+pytest>=8.0
